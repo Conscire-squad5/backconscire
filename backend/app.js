@@ -10,7 +10,6 @@
 // });
 
 var app = require('./App/config/server');
-var app = require('./App/config/server');
 
 var rotaHome = require('./App/routes/Audit')(app);
 var rotaHome = require('./App/routes/Comentario')(app);
