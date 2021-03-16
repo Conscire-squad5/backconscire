@@ -3,28 +3,16 @@ module.exports = function (app){
     const database=db();
     app.put('/audit/atualiza', (req, res) =>{
            
-//         const q1 = req.body.q1;
-//         const q2 = req.body.q2;
-//         const q3 = req.body.q3;
-//         const q4 = req.body.q4;    
-//         const q5 = req.body.q5; 
-//         const q6 = req.body.q6; 
-//         const q7 = req.body.q7; 
-//         const q8 = req.body.q8; 
-//         const q9 = req.body.q9; 
-//         const q10 = req.body.q10; 
-
-        
-        var q1 = parseInt(req.body.q1);
-        var q2 = parseInt(req.body.q2);
-        var q3 = parseInt(req.body.q3);
-        var q4 = parseInt(req.body.q4);
-        var q5 = parseInt(req.body.q5);
-        var q6 = parseInt(req.body.q6);
-        var q7 = parseInt(req.body.q7);
-        var q8 = parseInt(req.body.q8);
-        var q9 = parseInt(req.body.q9);
-        var q10 = parseInt(req.body.q10);
+        const q1 = req.body.q1;
+        const q2 = req.body.q2;
+        const q3 = req.body.q3;
+        const q4 = req.body.q4;    
+        const q5 = req.body.q5; 
+        const q6 = req.body.q6; 
+        const q7 = req.body.q7; 
+        const q8 = req.body.q8; 
+        const q9 = req.body.q9; 
+        const q10 = req.body.q10;
         const email = req.body.email;
         
         var resultado = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;  
@@ -66,7 +54,6 @@ module.exports = function (app){
                 \n*INTERVENÇÃO: Aconselhamento Simples – Deve ser prestada atenção ao consumo diário e semanal de bebidas alcoólicas, no sentido de determinar se os limites de baixo risco estão próximos de serem ultrapassados. Pergunte a si mesmo se apresentou quaisquer sinais de dependência do álcool, como por exemplo, sentir-se enjoado ou com tremores matinais, ou se consegue ingerir grandes quantidades de álcool sem que pareça que está embriagado. Se ultrapassar os limites em determinada ocasião, faça um esforço por compreender por que o fez e elabore um plano para não cair no mesmo erro. Pode ser listado motivos para reduzir o consumo ou deixar de beber; os riscos a que está sendo exposto; e formas de ultrapassar. Se tiver sempre presente como é importante reduzir o seu risco relacionado com o álcool, vai ver que é capaz. 
                 \n*Para entrar em contato com um profissional da saúde, para um diagnóstico, pode ser consultado: Lista de Caps-AD (Centros de Atenção Psicossocial em SP): https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204.` 
                 res.json(message);
-                //console.log(message)
             }
             else if (audit >= 16  && audit <= 19){
                 const message =`Seu resultado no teste Audit foi = ${audit} ---> Zona de Risco III: 
