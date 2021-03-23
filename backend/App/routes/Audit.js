@@ -67,8 +67,8 @@ module.exports = function (app){
                 \n*DEFINIÇÃO: Pessoas que se encontram nesse nível apresentam grande chance de ter um diagnóstico de dependência. Nesse caso, é preciso fazer uma avaliação mais cuidadosa e, se confirmado o diagnóstico, deve-se motivar o usuário a procurar atendimento especializado para acompanhamento e encaminhá-lo ao serviço adequado.
                 \n*INTERVENÇÃO: Encaminhamento para Diagnóstico, Avaliação e Tratamento Especializados – Entre em contato com um profissional especializado. De modo geral, o tratamento para a dependência do álcool é eficaz, mas poderá exigir um esforço considerável. Sendo inúmeros os benefícios em beber menos, tais como: viver mais; dormir melhor; poupar dinheiro; melhorar relacionamentos pessoais; envelhecer sem danos prematuros no cérebro; melhora o desempenho profissional; serão menores as probabilidades de doença cardíaca ou cancerígena ou problemas no fígado; diminui a probabilidade de morte por incêndio ou afogamento ou acidentes rodoviários; melhora desempenho sexual em homens; reduz a probabilidade de gravidez indesejada para as mulheres.
                 \n*Para entrar em contato com um profissional da saúde, para um diagnóstico, pode ser consultado: Lista de Caps-AD (Centros de Atenção Psicossocial em SP): https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204.`
-                //res.json(message);
-                res.json(res.innerHTML(message))
+                res.json(message);
+              
             }                       
         }
     );
