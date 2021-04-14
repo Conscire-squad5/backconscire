@@ -7,7 +7,7 @@ var rotaHome = require('./App/routes/Monitoramento')(app);
 
 
 app.get("/", (req, res) =>{ //Raiz
-    res.end("<html><h1> HelloOOOOOO world </h1> </html>")
+    res.end("<html><h1> Hello world </h1> </html>")
 })
 const PORT = process.env.PORT || 5000
 
