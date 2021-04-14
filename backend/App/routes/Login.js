@@ -5,7 +5,7 @@ const db = require('../config/database.js')
 module.exports = function (app){
     const database=db();
     app.get("/", (req, res) =>{ //Raiz
-        res.end("<html><h1> Hello world </h1> </html>")
+        res.end("<html><h1> Hellooooooooooooo world </h1> </html>")
     })
     
     app.post('/register', [ 
